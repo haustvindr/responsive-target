@@ -1,0 +1,110 @@
+/* Size 4 */
+/* Desktops, widescreens, TVs, big laptops, ... */
+@media all and (min-width: 1501px) and (max-width: 2000px)
+{
+	[data-responsive-target|='size']:not([data-responsive-target~='size-4']),
+	[data-responsive-target~='not-size-4'],
+	
+	[data-responsive-target~='from-size-5'],
+	
+	[data-responsive-target~='to-size-0'],
+	[data-responsive-target~='to-size-1'],
+	[data-responsive-target~='to-size-2'],
+	[data-responsive-target~='to-size-3'],
+	[data-responsive-target~='to-size-4']
+	{
+		display: none !important;
+	}
+}
+
+/* Size 3 */
+/* Small desktops, laptops, windowed browsers, ... */
+@media all and (min-width: 1201px) and (max-width: 1500px)
+{
+	[data-responsive-target|='size']:not([data-responsive-target~='size-3']),
+	[data-responsive-target~='not-size-3'],
+	
+	[data-responsive-target~='from-size-4'],
+	[data-responsive-target~='from-size-5'],
+	
+	[data-responsive-target~='to-size-0'],
+	[data-responsive-target~='to-size-1'],
+	[data-responsive-target~='to-size-2'],
+	[data-responsive-target~='to-size-3']
+	{
+		display: none !important;
+	}
+}
+
+/* Size 2 */
+/* Transition between mobile and desktop UIs */
+/* Tablets, huge phones (?), mid-sized devices, small desktops, laptops/netbooks, windowed browsers, ... */
+@media all and (min-width: 901px) and (max-width: 1200px)
+{
+	[data-responsive-target|='size']:not([data-responsive-target~='size-2']),
+	[data-responsive-target~='not-size-2'],
+	
+	[data-responsive-target~='from-size-3'],
+	[data-responsive-target~='from-size-4'],
+	[data-responsive-target~='from-size-5'],
+	
+	[data-responsive-target~='to-size-0'],
+	[data-responsive-target~='to-size-1'],
+	[data-responsive-target~='to-size-2']
+	{
+		display: none !important;
+	}
+}
+
+/* Size 1 */
+/* Mobile phones, landscape phones, small tablets, portrait tablets, ... */
+@media all and (min-width: 601px) and (max-width: 900px)
+{
+	[data-responsive-target|='size']:not([data-responsive-target~='size-1']),
+	[data-responsive-target~='not-size-1'],
+	
+	[data-responsive-target~='from-size-2'],
+	[data-responsive-target~='from-size-3'],
+	[data-responsive-target~='from-size-4'],
+	[data-responsive-target~='from-size-5'],
+	
+	[data-responsive-target~='to-size-0'],
+	[data-responsive-target~='to-size-1']
+	{
+		display: none !important;
+	}
+}
+
+/* Size 0 */
+/* Mobile phones, small devices */
+@media all and (max-width: 600px)
+{
+	[data-responsive-target|='size']:not([data-responsive-target~='size-0']),
+	[data-responsive-target~='not-size-0'],
+	
+	[data-responsive-target|='from-size']:not([data-responsive-target~='from-size-0']),
+	
+	[data-responsive-target~='to-size-0']
+	{
+		display: none !important;
+	}
+}
+
+
+/* Size 5 - max breakpoint */
+/* Very big desktops, big TVs, ... */
+@media all and (min-width: 2001px)
+{
+	[data-responsive-target|='size']:not([data-responsive-target~='size-5']),
+	[data-responsive-target~='not-size-5'],
+
+	[data-responsive-target~='to-size-0'],
+	[data-responsive-target~='to-size-1'],
+	[data-responsive-target~='to-size-2'],
+	[data-responsive-target~='to-size-3'],
+	[data-responsive-target~='to-size-4'],
+	[data-responsive-target~='to-size-5']
+	{
+		display: none !important;
+	}
+}
