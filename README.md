@@ -14,7 +14,7 @@ These are the breakpoints defined, and their names in the rules:
 |---|---|---|---|---|---|---|
 | From | 0px | 601px | 901px  | 1201px | 1501px | 2001px |
 | To | 600px | 900px | 1200px | 1500px | 2000px | max    |
-| Intended use | Small devices like phones | Tablets, phones in landscape | Transition between tablets and desktops, may appear in both | Windowed desktops | Widescreen desktops | Very big screens
+| Intended use | Small devices like phones | Tablets, phones in landscape | Transition between tablets and desktops, may appear in both | Windowed and small screen desktops | Widescreen desktops | Very big screens
 
 As it can be seen, not only the numbers are round, but they are also configured at regular intervals of 300px, with the exception of the size 5. This makes the breakpoints easily memorized and thus easier to combine with any other custom media query.
 
