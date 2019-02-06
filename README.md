@@ -30,8 +30,8 @@ There are 4 types of rules:
 |---|---|
 | size-* | Show the element in these sizes |
 | not-size-* | Hide the element in these sizes |
-| from-size-* | Show the element from this size up (excluded), and hide it in the smaller ones |
-| to-size-* | Show the element up to this size (included), and hide it in the bigger ones |
+| from-size-* | Show the element from this size up, and hide it in the smaller ones |
+| to-size-* | The element is shown in smaller sizes, and from this size up it is hidden |
 
 The **\*** refers to the size itself: _size-1_, _from_size_4_, etc.
 
