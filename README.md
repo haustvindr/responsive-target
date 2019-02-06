@@ -22,33 +22,54 @@ The media queries are designed for a mobile-first scenario thus it works mainly 
 
 `@media all and (min-width: 1201px) and (max-width: 1500px) ...`
 
-The CSS rules are not defined as classes, but as attributes (via HTML5 data-* custom attributes). This decision was made to unclutter the currently over-abused class, and to provide a more finely tuned and readable element declaration.
+The CSS rules are not defined as classes, but as attributes (via HTML5 _data-*_ custom attributes). This decision was made to unclutter the currently over-abused _class_ attribute, and to provide a more readable element declaration.
 
 There are 4 types of rules:
 
+| Type of rule | Effect in the element |
+|---|---|
 | size-* | Show the element in these sizes |
 | not-size-* | Hide the element in these sizes |
-| from-size-* | Show the element from this size up (included), and hide it in the smaller ones |
-| to-size-* | Show the element up to this size (excluded), and hide it in the bigger ones |
+| from-size-* | Show the element from this size up (excluded), and hide it in the smaller ones |
+| to-size-* | Show the element up to this size (included), and hide it in the bigger ones |
 
-The data-* attribute used to define the element visibility is aptly named `data-responsive-target`. Within the values of this attribute any combination of target values can be set, allowing for complex behaviours. Different kind of values may be mixed, but they will be applied following the declarations in the CSS rules thus the end behaviour may be unexpected.
+The **\*** refers to the size itself: _size-1_, _from_size_4_, etc.
+
+The _data-*_ attribute used to define the element visibility is aptly named `data-responsive-target`. Within the values of this attribute any combination of target values can be set, allowing for complex behaviours. Different kind of values may be mixed, but they will be applied following the declarations in the CSS rules thus the end behaviour may be unexpected.
+
+All elements are visible by default, that means you only need to add the responsive targets to elements that will have specific visibility rules. An empty `data-responsive-target` works the same as if there were no attribute at all (always visible).
 
 ## Okay? I think I need some examples
 
 Sure. Text is nice but we all want some applied examples!
 
+**Show an element only in size 3**
+
+`<div data-responsive-target='size-3'>...</div>`
+
 **Show an element only in sizes 0, 2 and 3**
+
 `<div data-responsive-target='size-0 size-2 size-3'>...</div>`
 
 **Show an element only in phones and tablets**
+
 `<div data-responsive-target='to-size-2'>...</div>`
 
-**Always show an element**
+**Always show an element, in any size**
+
 `<div>...</div>`
 `<div data-responsive-target>...</div>`
+`<div data-responsive-target='size-0 size-1 size-2 size-3 size-4 size-5'>...</div>`
+`<div data-responsive-target='from-size-0'>...</div>`
 
 **Hide an element from normal and widescreen desktops**
+
 `<div data-responsive-target='not-size-3 not-size-4'>...</div>`
 
-**This will have unexpected results, because to-size-* has priority over the size-* rule**
+**This will have unexpected results due to the declarations' priority**
+
 `<div data-responsive-target='to-size-2 size-4'>...</div>`
+
+## I have more questions
+
+I provide details about the implementation and a one-stop complex example [at the wiki](https://github.com/haustvindr/responsive-target/wiki).
