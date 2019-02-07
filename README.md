@@ -45,30 +45,42 @@ Sure. Text is nice but we all want some applied examples!
 
 **Show an element only in size 3**
 
-`<div data-responsive-target='size-3'>...</div>`
+```html
+<div data-responsive-target='size-3'>...</div>
+```
 
 **Show an element only in sizes 0, 2 and 3**
 
-`<div data-responsive-target='size-0 size-2 size-3'>...</div>`
+```html
+<div data-responsive-target='size-0 size-2 size-3'>...</div>
+```
 
 **Show an element only in phones and tablets**
 
-`<div data-responsive-target='to-size-2'>...</div>`
+```html
+<div data-responsive-target='to-size-2'>...</div>
+```
 
 **Always show an element, in any size**
 
-`<div>...</div>`
-`<div data-responsive-target>...</div>`
-`<div data-responsive-target='size-0 size-1 size-2 size-3 size-4 size-5'>...</div>`
-`<div data-responsive-target='from-size-0'>...</div>`
+```html
+<div>...</div>
+<div data-responsive-target>...</div>
+<div data-responsive-target='size-0 size-1 size-2 size-3 size-4 size-5'>...</div>
+<div data-responsive-target='from-size-0'>...</div>
+```
 
 **Hide an element from normal and widescreen desktops**
 
-`<div data-responsive-target='not-size-3 not-size-4'>...</div>`
+```html
+<div data-responsive-target='not-size-3 not-size-4'>...</div>
+```
 
 **This will have unexpected results due to the declarations' priority**
 
-`<div data-responsive-target='to-size-2 size-4'>...</div>`
+```html
+<div data-responsive-target='to-size-2 size-4'>...</div>
+```
 
 ## I have more questions
 
