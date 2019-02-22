@@ -98,12 +98,7 @@
 	[data-responsive-target|='size']:not([data-responsive-target~='size-5']),
 	[data-responsive-target~='not-size-5'],
 
-	[data-responsive-target~='to-size-0'],
-	[data-responsive-target~='to-size-1'],
-	[data-responsive-target~='to-size-2'],
-	[data-responsive-target~='to-size-3'],
-	[data-responsive-target~='to-size-4'],
-	[data-responsive-target~='to-size-5']
+	[data-responsive-target|='to-size']
 	{
 		display: none !important;
 	}
