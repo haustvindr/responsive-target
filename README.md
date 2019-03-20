@@ -16,7 +16,7 @@ These are the breakpoints defined, and their names in the rules:
 | To | 600px | 900px | 1200px | 1500px | 2000px | max    |
 | Intended use | Small devices like phones | Tablets, phones in landscape | Transition between tablets and desktops, may appear in both | Windowed and small screen desktops | Widescreen desktops | Very big screens
 
-As it can be seen, not only the numbers are round, but they are also configured at regular intervals of 300px, with the exception of the size 5. This makes the breakpoints easily memorized and thus easier to combine with any other custom media query.
+As it can be seen, not only the numbers are round, but they are also configured at regular intervals of 300px, with the exception of the size 4. This makes the breakpoints easily memorized and thus easier to combine with any other custom media query.
 
 The media queries are designed for a mobile-first scenario thus it works mainly with min-width, though max-width is used to correctly limit the upper range of each breakpoint. All possible media are included in the queries by default.
 
